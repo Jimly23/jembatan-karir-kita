@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Star, Users, Calendar } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const Hero = () => {
   return (
@@ -22,12 +23,15 @@ export const Hero = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button 
+              asChild
               size="lg" 
               className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-lg px-8 py-4"
             >
-              <Star className="h-5 w-5 mr-2" />
-              Mulai Tes Minat Bakat
-              <ArrowRight className="h-5 w-5 ml-2" />
+              <Link to="/test">
+                <Star className="h-5 w-5 mr-2" />
+                Mulai Tes Minat Bakat
+                <ArrowRight className="h-5 w-5 ml-2" />
+              </Link>
             </Button>
             
             <Button 
