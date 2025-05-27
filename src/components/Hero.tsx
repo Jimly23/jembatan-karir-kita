@@ -35,12 +35,15 @@ export const Hero = () => {
             </Button>
             
             <Button 
+              asChild
               size="lg" 
               variant="outline" 
               className="border-2 border-purple-300 text-purple-600 hover:bg-purple-50 text-lg px-8 py-4"
             >
-              <Calendar className="h-5 w-5 mr-2" />
-              Jadwalkan Konseling
+              <Link to="/counseling">
+                <Calendar className="h-5 w-5 mr-2" />
+                Jadwalkan Konseling
+              </Link>
             </Button>
           </div>
 
